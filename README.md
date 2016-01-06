@@ -19,7 +19,7 @@ Kubernetes on Raspberry PI
 
 Fork of awassink's k8s-on-rpi, interested parties may find https://github.com/luxas/kubernetes-on-arm more useful. 
 
-To use:
+To use this project:
 
 * Update rootfs/etc/kubernetes/k8s.conf with suitable IP address pointing to master node's IP address
 * Ensure Docker is installed and working (able to run images and report on them)
