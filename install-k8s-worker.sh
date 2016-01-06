@@ -2,9 +2,9 @@
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
-apt-get install bridge-utils
-
 echo "Copying kubernetes service configuration files"
+mkdir /etc/kubernetes
+cp -f ./rootfs/etc/kubernetes/k8s.conf /etc/kubernetes/k8s.conf
 cp -f ./rootfs/lib/systemd/system/docker-bootstrap.service /lib/systemd/system/docker-bootstrap.service
 cp -f ./rootfs/lib/systemd/system/docker-bootstrap.socket /lib/systemd/system/docker-bootstrap.socket
 cp -f ./rootfs/lib/systemd/system/k8s-flannel.service /lib/systemd/system/k8s-flannel.service
